@@ -1,5 +1,17 @@
 #!/bin/bash
 
+      CURL_STATUS=$(dpkg-query -W -f='${Status}' curl | awk '{print $3}'|tr -d '-')
+
+
+if [ "$CURL_STATUS" = "notinstalled" ]; then
+
+       echo "Insatlling CURL"
+echo
+echo
+         apt install curl
+fi
+
+
 if [ ! -x /usr/bin/nodejs ]; then
 echo
 echo
