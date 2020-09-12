@@ -9,3 +9,7 @@ Run the script with sudo.
 change the file permission with 777
 
 ` ` ` sudo chmod 777 nodejs_npm.sh ` ` `
+
+## Prerequisite:
+
+   * Ubuntu OS.
